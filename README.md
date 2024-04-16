@@ -2,4 +2,4 @@
 permalink: /index.html
 ---
 
-# attempting to upload to github pages
+So far the index and admin pages are up.
