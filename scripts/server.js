@@ -12,7 +12,7 @@ app.post('/move_rc_car', (req, res) => {
     // Send selected room information to Python script
     const pythonProcess = spawn('python', ['rc_car_control.py', selectedRoom]);
     pythonProcess.stdout.on('data', (data) => {
-        console.log(`Python script output: ${data}`);
+        console.log(`Python script output : ${data}`);
     });
     res.send('Received room: ' + selectedRoom);
 });
