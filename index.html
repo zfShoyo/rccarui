@@ -12,13 +12,9 @@
         <form id="roomSelectionForm">
             <label for="rooms">Rooms:</label>
             <select id="rooms" name="rooms">
-                <option value="1">Main Lobby</option>
-                <option value="2">Electronics Lab</option>
-                <option value="3">Power Systems Lab</option>
-                <option value="4">Digital Systems Lab</option>
-                <option value="5">Lecture Hall A</option>
-                <option value="6">Microcontroller Lab</option>
-                <option value="7">Senior Design Studio</option>
+                <option value="1">Computer Lab (Room 103)</option>
+                <option value="2">Capstone lab (Room 105)</option>
+                <option value="3">Electronics Lab (Room 108)</option>
                 <!-- Add more rooms as needed -->
             </select>
             <button type="submit">Go to Room</button>
@@ -49,7 +45,6 @@
             event.preventDefault(); // Prevent form submission
             const selectedRoom = document.getElementById("rooms").value;
             // Here you can send the selected room to the server
-            // For demonstration purposes, we'll just display the selected room locally
             document.getElementById("feedbackMessage").textContent = "Selected Room: " + selectedRoom;
         });
     </script>
